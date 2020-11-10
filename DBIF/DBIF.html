@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/DBIF.css">
+    <title>DBIF Page</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-wrapper">
+            <div class="header-logo">
+                <div class="header-logo-img">
+                    <img src="./img/logo-side.svg" alt="">
+                </div>
+                <div class="header-logo-text">
+                    <a href="#">
+                        <h1 class="header-logo"><span>DB</span>IF</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-links">
+                <span onclick="openNav()">&#9776;</span>
+            </div>
+            <div id="hamburger" class="sliding-nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="nav-link">
+                    <a href="#About">About</a>
+                    <a href="#Projects">Projects</a>
+                    <a href="#Contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="intro">
+        <div class="intro-wrapper">
+            <video id="videoBG" poster="poster.JPG" autoplay muted loop>
+                <source src="./video/lava.mp4" type="video/mp4">
+            </video>
+            <h1 class="intro-logo1">
+                Driven
+            </h1>
+            <h1 class="intro-logo2">
+                By
+            </h1>
+            <h1 class="intro-logo3">
+                Inner
+            </h1>
+            <h1 class="intro-logo4">
+                Fire
+            </h1>
+        </div>
+    </div>
+    <div class="hidden-intro">
+        <div class="intro-text">
+          <h1 class="hidden-text">
+            <span class="intro-motto">Driven by</span>
+          </h1>
+          <h1 class="hidden-text">
+            <span class="intro-motto">inner fire</span>
+          </h1>
+        </div>
+      </div>
+    <div class="intro-slider"></div>
+    <div class="content">
+        <div id="About" class="about">
+            <div class="section">
+                <div class="about-img"></div>
+                <div class="about-content">
+                    <h1>About Us</h1>
+                    <span></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus vitae iusto dolorum quam obcaecati perspiciatis quae consequuntur labore, odit ad, tempora dolore.</p>
+                    <ul class="about-social-media">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="Projects" class="projects">
+            <div class="title">
+                <h1>Projects</h1>
+            </div>
+            <div class="border"></div>
+            <div class="project-types">
+                <div class="frontend-projects">
+                    <div class="project-section-img1">
+                        <input type="button" class="button" value="Learn more">
+                    </div>
+                    <div class="horizontal-space"></div>
+                    <div class="project-section-text1">
+                        <h3>Front-End</h3>
+                        <div class="horizontal-line"></div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime illo culpa ratione cumque veniam provident eos debitis tempore obcaecati id. Numquam praesentium dolorum possimus, ex ipsum velit eius exercitationem temporibus.</p>
+                    </div>
+                </div>
+                <div class="backend-projects">
+                    <div class="project-section-img2">
+                        <input type="button" class="button" value="Learn more">
+                    </div>
+                    <div class="horizontal-space"></div>
+                    <div class="project-section-text2">
+                        <h3>Back-End</h3>
+                        <div class="horizontal-line"></div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime illo culpa ratione cumque veniam provident eos debitis tempore obcaecati id. Numquam praesentium dolorum possimus, ex ipsum velit eius exercitationem temporibus.</p>
+                    </div>
+                </div>
+                <div class="fullstack-projects">
+                    <div class="project-section-img3">
+                        <input type="button" class="button" value="Learn more">
+                    </div>
+                    <div class="horizontal-space"></div>
+                    <div class="project-section-text3">
+                        <h3>Full-stack</h3>
+                        <div class="horizontal-line"></div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime illo culpa ratione cumque veniam provident eos debitis tempore obcaecati id. Numquam praesentium dolorum possimus, ex ipsum velit eius exercitationem temporibus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Contact" class="contact">
+            <div class="title">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="border"></div>
+            <form action="" method="POST" class="contact-form">
+                <input type="text" class="contact-form-text" placeholder="Your name">
+                <input type="email" class="contact-form-text" placeholder="Your email">
+                <input type="text" class="contact-form-text" placeholder="Your phone">
+                <textarea name="" id="" class="contact-form-text" placeholder="Enter your message here.."></textarea>
+                <input type="submit" class="contact-form-btn" value="Send">
+            </form>
+            <div class="border"></div>
+        </div>
+    </div>
+
+
+    <script>
+        function openNav() {
+          document.getElementById("hamburger").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("hamburger").style.width = "0";
+        }
+    </script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"
+  ></script>
+    <script src="./DBIF.js"></script>
+</body>
+</html>
